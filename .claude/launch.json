@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "aom-server",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "aomOnline_server", "run", "start:dev"],
+      "port": 5000
+    },
+    {
+      "name": "aom-client",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "aomOnline_client", "run", "dev"],
+      "port": 3000
+    }
+  ]
+}

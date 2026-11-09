@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.gitignore
+.env
+.env.*
+.vercel
+uploads
+npm-debug.log*
+*.tsbuildinfo
+.eslintrc.json
+.eslintignore
+.prettierrc.json
+README.md

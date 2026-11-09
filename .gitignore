@@ -1,0 +1,93 @@
+# ========================================================
+# Root .gitignore for Monorepo (Client + Server)
+# ========================================================
+
+# Dependencies (Node / Yarn / pnpm)
+node_modules/
+*/node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Environment variables & secrets (Security)
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+!.env.*.example
+!*.env.example
+!*.env.*.example
+
+# Production & Build outputs
+dist/
+*/dist/
+build/
+*/build/
+out/
+*/out/
+
+# Next.js build files & cache
+.next/
+*/.next/
+next-env.d.ts
+
+# TypeScript
+*.tsbuildinfo
+
+# Uploaded media & dynamic user files (keep folder structure with .gitkeep)
+uploads/**
+*/uploads/**
+!uploads/
+!uploads/**/
+!*/uploads/
+!*/uploads/**/
+!**/.gitkeep
+
+# Logs & debugging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing & Coverage
+coverage/
+*/coverage/
+*.lcov
+.nyc_output
+
+# IDE, OS & Tooling
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.claude/settings.local.json
+
+# Vercel / Cloud deployment cache
+.vercel/
+*/.vercel/
+
+# Temporary files & caches
+*.tmp
+*.temp
+*.bak
+.cache/
+*/.cache/
