@@ -64,3 +64,4 @@ The client will start on `http://localhost:3000`.
 - Sensitive credentials (`.env`, `.env.local`) are excluded from git tracking. Always refer to `.env.example` and `.env.local.example`.
 - Large build directories (`.next`, `dist`, `node_modules`) are strictly ignored.
 - Local user upload media files in `aomOnline_server/uploads` are ignored while maintaining the directory structure via `.gitkeep`.
+

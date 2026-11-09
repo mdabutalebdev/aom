@@ -4,9 +4,9 @@
   "description": "AOM Online Madrasa management system backend (Express + TypeScript modular)",
   "main": "dist/server.js",
   "scripts": {
-    "start:prod": "node ./dist/server.js",
-    "start:dev": "ts-node-dev --respawn --transpile-only --ignore-watch uploads src/server.ts",
-    "build": "tsc",
+    "start:prod": "node init && node ./dist/server.js",
+    "start:dev": "node init && ts-node-dev --respawn --transpile-only --ignore-watch uploads src/server.ts",
+    "build": "node init && tsc",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
     "prettier": "prettier --write \"./src/**/*.+(ts|json)\"",
